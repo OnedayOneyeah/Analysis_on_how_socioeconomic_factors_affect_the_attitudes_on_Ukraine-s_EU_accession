@@ -1,0 +1,762 @@
+---
+title: "Analysis on how socioeconomic factors affect the attitudes on Ukraines's EU accession"
+subtitle: "Focused on four countries: France, Germany, Italy, and Poland"
+author: "Yewon(Chloe) Han"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+thanks: "Code and data are available at: https://github.com/OnedayOneyeah/Analysis_on_how_socioeconomic_factors_effect_the_attitudes_on_Ukraine-s_EU_accession"
+fontsize: 12pt
+abstract:  "This paper provides statistical analysis on the relationship between socioeconomic factors and the attitudes of France, Germany, Italy and Poland on Ukraine’s EU accession. Based on ESS Round 9 dataset, one material factor and six non material factors were induced to disclose the variables impacting the attitudes. It was found that favorable attitudes on immigrants have a strong positive correlation with attitudes on Ukraine’s EU accession, while affiliation to Europe and discrimination scale of ethnicity, nationality, and language do not have significant effect. Interest in politics has a slight negative correlation with them. Finally, the social trust has negative correlation with the attitudes, which is opposed to the initial assumption."
+output: 
+  bookdown::pdf_document2:
+    fig_caption: yes
+    toc: false
+bibliography: bibliography.bib
+link_citations: yes
+---
+
+
+# Introduction
+ Since Russia began a military invasion on February 24th, there has been a wave of financial support and arms supplies for Ukraine from a variety of countries all around, including putting political and economic sanctions on Russia. Zelenskyy, the president of Ukraine, further called for immediate EU membership and admission of Ukraine’s EU accession to make this support be more effective and organized[@1].
+ 
+ In fact, Ukraine’s EU accession is not a new topic in European politics. Since the Soviet Union was dissolved in 1991, Ukraine has stuck to liberalism against Russia. Most of the countries in the EU were not favorable to the communism of the Soviet Union before the Cold War was terminated, and Ukraine had taken the same political stance with them. Therefore, there has been a discussion on EU accession within the country, and Ukraine has conducted surveys to disclose the public opinion on the topic. For instance, New Europe Center[@2], an independent think-tank based in Ukraine, published a research paper to explore Ukraine's perception in the EU.
+ 
+ However, Ukraine's EU accession is not a simple issue. The Dutch prime minister Mark Rutte, the prominent opponent of EU enlargement stated that the EU will keep the bloc with Ukraine down the road, but the fast track for Ukraine’s EU accession cannot be accepted[@3]. The reason why Ukraine’s EU accession is controversial despite sharing similar historical and political contexts with other European countries is that the accession stands for the EU countries accepting Ukraine as one of their social members in the same community.
+ 
+ This should be basically based on social trust and affiliation. Otherwise, other EU countries will keep regarding Ukraine as an outgroup, which will lead them to feel they have exclusive proprietary claims to aspects of society[@4]. It will generate prejudicial attitudes toward Ukraine whenever they are under threat. Hence, it is critical to disclose if the EU countries have social trust and affiliation with Ukraine, and the degree of them.
+ 
+ This paper analyzes the relationship between socioeconomic factors and attitudes on Ukraine’s EU accession of four countries: France, Germany, Italy and Poland. The socioeconomic variables were induced from the ESS Round 9 data, and they are further described in appendix. First of all, the literature studies are presented in terms of attitudes of the four countries on the issue, the previous study on socioeconomic factors impacting the attitudes towards outgroups. Then, ESS data including its methodology, key features, strengths and weaknesses is discussed. Based on the dataset, new findings in terms of the relationship between selected variables and the attitudes on Ukraine’s EU accession are further conveyed. Finally, the limitations of this paper and the suggestions for further study are reviewed.
+
+
+# Literature Study
+ Kantar Profiles Division, a sociological agency carried out the survey at the request of the New European Center. It took place from 22nd to 29th September 2020, and all the answers were collected on an internet-based survey. Overall, over 4,000 respondents aged between 18 and 65+ answered six questions, including one open question. Respondents represent their countries proportionally based on gender, age, and regions. The six questions were attached in the appendix, but this paper only focuses on the last question, which shows the public opinion of each country on including Ukraine in the EU; “Do you think Ukraine should become a member of the following organizations: EU, NATO, Both EU and NATO, none of the above.”
+ 
+ According to the survey, More than half of the respondents agreed to include Ukraine to the EU in Italy and Poland. In the case of France and Germany, the rates were only up to 39.9% and 31.3% respectively. In particular, the response that Ukraine should be a member of Nato was highest in Poland as well. Considering NATO is an intergovernmental military alliance, the fact that about half of the respondents think that Ukraine should be involved in the military shows Poland is more sensitive to military invasion of Russia in comparison to three other countries.
+ 
+ Although the four countries are all affiliated with the EU, the public opinion on Ukraine’s EU accession was presented differently. The question that we can drive here is which variables make the difference. We can refer to Jeffery Mitchell’s research on anti-immigrant attitudes of European countries[@5]. He analyzed how social trust affects the attitudes on immigrant issues in European countries based on group threat theory. Jeffery brought a multi-level analytical framework, and included material indicators such as economic stress and high proportions of outgroup populations with non-material contexts indicators such as media environments/rhetoric and religious, political contexts to scale the factors impacting the social trust. In reference to Jeffery’s literature, it is possible to drive the social variables expected to affect social trust on Ukraine of each EU country.
+ 
+ In this paper, we analyze the correlation of the material and non material factors with the public opinion on Ukraine’s EU accession of four countries: France,  Germany, Italy and Poland. In particular, it focuses on non material factors which give insights on how the four countries portray the relationship with Ukraine in social context, and how they value the presence of EU.
+
+# Data
+## About ESS
+ This paper uses European Social Survey(ESS) Round 9 data. ESS is a biennial cross-national survey that has been conducted across Europe since 2001. By using face-to-face interview survey methods, it measures the attitudes, beliefs, and behavioral patterns of diverse populations in European countries in terms of social, political and moral aspects. 
+ 
+ ESS Round 9 used in this paper is the most recently conducted European Social Survey in 2018 on 29 European countries. This dataset was released on 17th of February 2021 as an integrated file, edition 3.1. It is documented by round, and includes 572 variables and 49,519 entries in total.
+
+## Limitation, Tradeoff, and biases
+ Even though it is the most recent data, there could be still a temporal disparity of the results when we tell the story of 2021, considering the survey was conducted in 2018. However, it is still meaningful in that it can explain the general public opinion on Ukraine’s EU accession before the Russia invasion, which is expected to be more applicable to similar cases excluding recent variations.
+ 
+ The basic methodology of ESS is face-to-face personal interview. It is possible to collect rich qualitative data but at the same time, there is a tradeoff that the interviewer's behavior can affect the measurement, and the representation of the target population. Even if they take measures to prevent them, it is impossible to completely exclude this human factor from the collected data, which makes the data biased.
+
+## Survey Methodology 
+ Every two years, design teams of ESS make a call for a question module, and start to develop questionnaires. The questionnaires are structured using a combination of repeated key items known as core questionnaires, and rotating modules. The core questionnaires consist of around 200 questions, and they are asked in every round. On the other hand, a rotating module covers a single academic topic and/or policy concern within Europe which may either cover a completely new topic or has been previously included but with a different approach. The topics are proposed by the Scientific Advisory Board(SAB) and developed by Core Scientific Team (CST).
+ 
+ Then the questionnaires are translated in different European languages, and spreaded to the participants selected with cross sectional and random probability sampling methods. Hence, every resident within private households aged 15 and over basically has a chance to be selected, and the chance of selection is explicit. Also quota sampling is not permitted at any stage; households and individuals who refuse or are not eligible to respond, or those who could not be contacted, cannot be substituted. In terms of sample size, each country is allowed to decide the number of participants selected from the sampling frame, but it must achieve a minimum effective sample size of 1500 in general, and 800 for countries whose population is less than 2 million after discounting for design effects. 
+ 
+ Based on the sample design, ESS starts to collect the data using face-to-face computer assisted personal interviews. Since ESS covers a number of countries in Europe, it appoints a national coordinator and a survey organization which actually conducts the survey by each country. They have to follow the data collection standards that ESS requires; 70% response rate, and 3% maximum for the non-contact rate, both of the target. Also, the Interviewer call should be scheduled at least 4 contacts attempts, 1 in the evening and 1 at the weekend. To maintain the quality of interviews, the workload of the interviewer should be controlled to 48 sample units gross in maximum. All the interviewers should deliver a detailed briefing of interviews to participants in sessions. Overall, the quality contact forms are required to record and document data on fieldwork processes, and quality control back-checks are required on the completed interviews and ineligible cases. These whole fieldworks period should be of at least 6 weeks within 5 months between September and January of the following year.
+ 
+ Aligning with data collection, national context monitoring also starts to be processed. This process discloses the national variations attributed to external factors not from the attitudinal difference. ESS has used event data collection and recording of media claims methodology, but the latter had a problem in that all the recording should be conducted manually. Therefore, ESS is now reviewing an alternative automatic coding of media context to implement in the national context monitoring process.
+ 
+ The collected data and the national contexts of each European country are processed and archived in the next stage. Because the data covers multiple European countries, this process takes place with the collaboration between national teams and national coordinators which have all decisions about the editing of data and first-hand knowledge. ESS Data Protocol functions as the key standard to process the collected data in a uniform way. This protocol fundamentally includes the standard to code the variables, categories, and routing instructions, and it also provides a guideline for the collaboration between the national teams and collaborators. Based on this protocol, the national teams report the processed data to coordinators and receive their feedback and then edit controls and complete the final EES data.
+ 
+ The survey data is archived by round, theme, and country respectively, and the metadata of variables used in the data is archived and displayed in an electronic codebook in ESS website, which is available in different formats including SPSS, SAS, and Stata. Cumulative files of the data over time are also available in ESS Cumulative Data Wizard. Finally, the contextual data collected in the national context monitoring process is archived as ESS Multilevel Data.
+ 
+ The last stage of ESS methodology is to assess the quality of data. This process includes evaluating the quality and comparability of its measurement instruments, assessing the socio-demographic sample composition using external benchmark data and assessing the process and output quality of the survey.
+
+```{r setup, include=FALSE}
+options(tinytex.verbose = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
+
+# Initial Setting
+library(haven)
+library(knitr)
+library(tidyverse)
+library(tidytext)
+library(Hmisc)
+library(bookdown)
+library(kableExtra)
+dataset <- read_sav("ESS9e03_1 2.sav")
+complementary_dataset_unemployment <- read_csv("unemployment_rate.csv")
+
+# [Discussion] Datasets for 4 countries
+discussion_dataset <- tibble("cntry" = c("DE", "FR", "IT", "PL"),
+                             "EU accession(%)" = c(47.0, 42.6, 61.1, 69.5),
+                             "Nato accession(%)" = c(31.3, 39.9, 31.3, 49.6))
+```
+
+```{r, include = FALSE}
+# Dataset for material variables
+dataset_material <- dataset |>
+  select(cntry, 
+         uemp3m, uemp12m, uemp5yr, 
+         uemplap, uemplip, pdwrkp) |>
+  group_by(cntry) |>
+  summarise("unemployment_3m(%)" = length(which(uemp3m==1))/length(which(uemp3m %in% c(1,2)))*100,
+            "unemployment_12m(%)" = length(which(uemp12m==1))/length(which(uemp12m %in% c(1,2)))*100,
+            "unemployment_5yr(%)" = length(which(uemp5yr==1))/length(which(uemp5yr %in% c(1,2)))*100,
+            "unemployment_partner_actively(%)" = length(which(uemplap==1))/length(which(uemplap %in% c(0,1)))*100,
+            "unemployment_partner_nactively(%)" = length(which(uemplip==1))/length(which(uemplip %in% c(0,1)))*100,
+            "partner_paid_job(%)" = length(which(pdwrkp==1))/length(which(pdwrkp %in% c(0,1)))*100) |>
+  arrange(`unemployment_3m(%)`)
+```
+
+
+# Results
+ Based on ESS Round 9 dataset, we induced six indicators to review the factors expected to affect the attitudes on Ukraine’s EU accession; one material and five non material factors.
+ 
+ The material factor is the unemployment indicators, subdivided by three dimensions: short term unemployment, long term unemployment, and recent unemployment. Non material factors are categorized in five sectors: affiliation to Europe, attitudes on immigrants, social trust, discrimination, and interest in politics. 
+ 
+ Using these indicators, we analyze the attitudes on Ukraine’s EU accession of four countries: France, Germany, Italy, and Poland. 
+
+## Material Factor
+
+```{r, include = FALSE}
+# Dataset for material variables
+dataset_material <- dataset |>
+  select(cntry, 
+         uemp3m, uemp12m, uemp5yr, 
+         uemplap, uemplip, pdwrkp) |>
+  group_by(cntry) |>
+  summarise("unemployment_3m(%)" = length(which(uemp3m==1))/length(which(uemp3m %in% c(1,2)))*100,
+            "unemployment_12m(%)" = length(which(uemp12m==1))/length(which(uemp12m %in% c(1,2)))*100,
+            "unemployment_5yr(%)" = length(which(uemp5yr==1))/length(which(uemp5yr %in% c(1,2)))*100,
+            "unemployment_partner_actively(%)" = length(which(uemplap==1))/length(which(uemplap %in% c(0,1)))*100,
+            "unemployment_partner_nactively(%)" = length(which(uemplip==1))/length(which(uemplip %in% c(0,1)))*100,
+            "partner_paid_job(%)" = length(which(pdwrkp==1))/length(which(pdwrkp %in% c(0,1)))*100) |>
+  arrange(`unemployment_3m(%)`)
+```
+ Unemployment is a critical material factor linked with various social problems. It is closely associated with poverty, homelessness, income, inequality, crime, health outcomes, social exclusion, and even self-esteem of a social member. Hence, it is necessary to review the different degrees of unemployment indicators by country, and figure out the relationship with attitudes on the outer group, here, Ukraine.
+ 
+ The first unemployment indicator is related to short term unemployment. According to ESS unemployment indicators, France has the fifth highest ratio of the respondents who said they were ever unemployed and seeking work for a period more than three months, following Latvia, Montenegro, Serbia and Spain(Table \@ref(tab:t1)). On the other hand, Italy(29.74%) and Germany(27.38%) record lower scores, and Poland(22.24%) is one of the countries with lowest unemployment indicators. 
+
+```{r t1, echo = FALSE}
+# 1. Matrerial variables
+# [Result] Short/medium/long term unemployment indicators
+dataset_material |>
+  arrange(desc(`unemployment_3m(%)`)) |>
+  select(cntry, `unemployment_3m(%)`) |>
+  head(n = 5)|>
+  knitr::kable(col.names = c("Country", "Ratio(%)"),
+        caption = "Ever unemployed and seeking work for a period more than three months",
+        digits = 2,
+        booktabs = TRUE,  
+        linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+ Another unemployment indicator presents the long term unemployment experience of respondents by country. By and large, the indicator is higher in comparison to the short term unemployment indicator[@7]. This time, the ratio of the respondents who said they experienced any period of unemployment and work seeking lasted 12 months or more is highest in Italy among four countries, followed by France, Germany and Poland (Table \@ref(tab:t2)).
+
+```{r t2, echo = FALSE}
+dataset_material |>
+  arrange(desc(`unemployment_12m(%)`)) |>
+  select(cntry, `unemployment_12m(%)`) |>
+  filter(cntry %in% c("FR","IT", "DE", "PL")) |>
+  knitr::kable(col.names = c("Country", "Ratio(%)"),
+               caption = "Any period of unemployment and work seeking lasted 12 months or more",
+               digits = 2,
+               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+ The percentage of the respondents who said they experienced any period of unemployment and work seeking within last 5 years is highest in Italy among all European countries in the survey. In contrast, Germany records the second lowest(Table \@ref(tab:t3)).
+
+```{r t3, echo = FALSE}
+dataset_material |>
+  arrange(desc(`unemployment_5yr(%)`)) |>
+  select(cntry, `unemployment_5yr(%)`)|>
+  filter(cntry %in% c("FR", "IT", "DE", "PL")) |>
+  knitr::kable(col.names = c("Country", "Ratio(%)"),
+               caption = "Any period of unemployment and work seeking within last 5 years",
+               digits = 2,
+               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+ Since these unemployment indicators were derived from sampled respondents, it itself cannot directly refer to the national scale of unemployment status. Therefore, it is important to compare if the results are consistent with the unemployment rates by country, a general unemployment indicator. According to World Bank[@8], the unemployment rate is highest in Italy, followed by France, and there is huge gap between the two countries and the rest. Considering Italy and France also have high unemployment indicators in ESS data as well, it is possible to conclude that these two countries have bad material conditions in comparison to Poland and Germany(Table \@ref(tab:t4)).
+
+```{r t4, echo=FALSE}
+# [Dicussions] Complementary tables for unemployment rate
+complementary_dataset_unemployment_cleaned <- complementary_dataset_unemployment |>
+  filter(`Country Name` %in% c("France", "Germany", "Italy", "Poland")) |>
+  select(`Country Name`, `2018`) |>
+  arrange(desc(`2018`))
+
+knitr::kable(complementary_dataset_unemployment_cleaned,
+             caption = "Unemployment rate in 2018",
+             col.names = c("Country", "Unemployment rate( %)"),
+             digits = 2,
+                            booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+ Finally, we compared the correlation between these material indicators and the public opinion on Ukraine’s EU accession(Table \@ref(tab:t5). There was a significant negative correlation between the ratio of the respondents who said they were ever unemployed and seeking work for a period more than three months and the public opinion on Ukraine’s EU accession, while the covariances of other variables were ignorable or not remarkable. However, it lacks convincing evidence to conclude that the countries with high unemployment indicators are not willing to accept Ukraine as a new social member. First of all, the ratio of the respondents who experienced any period of unemployment and work seeking within last 5 years have a positive correlation with Ukraine’s EU accession although it is not remarkable. Moreover, Ira and Francisco’s research on the relationship between unemployment and attitudes towards foreigners in EU shows unemployed Europeans do not have negative attitudes towards foreigners than the employed per se[@9]. There are more complicated factors such as the concentration of immigrants which affect the attitudes, which makes it hard to merely conclude that the negative material condition of a country leads it to have a negative attitude on Ukraine’s EU accession. In this context, non material factors become crucial in that they are closely related to the behavior or attitudes of individuals.
+```{r t5, echo = FALSE}
+discussion_dataset_merged_material <- merge(discussion_dataset, dataset_material,
+                                            by = "cntry") |>
+  select(cntry, `EU accession(%)`, `unemployment_3m(%)`, `unemployment_12m(%)`,
+         `unemployment_5yr(%)`)
+
+correlation_table_material <- discussion_dataset_merged_material |>
+  select(-cntry) |>
+  summarise(EU_accession = `EU accession(%)`,
+            unemployment_3m = `unemployment_3m(%)`,
+            unemployment_12m = `unemployment_12m(%)`,
+            unemployment_5yr = `unemployment_5yr(%)`) |>
+  cor(method = "pearson")
+
+correlation_table_material[2:4,1] |>
+  knitr::kable(col.names = "EU accession",
+               caption = "Correlation between Unemployment Indicators and
+               Attitudes on Ukraine's EU accession",
+               digits = 2,
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+
+## Non Material Factor
+### Affiliation to Europe
+ The first non material factor is related to affiliation to Europe. They are about how the respondents are emotionally attached to Europe, whether they are going to vote to remain or join in EU, and whether they think EU should go further respectively.
+ 
+  Among the countries affiliated to EU, they are more likely to think EU should go further if they are more willing to vote to remain in EU(Table \@ref(tab:t6)). For the countries not affiliated to EU, they are more willing to vote for joining EU if people think EU should go further. Moreover, the countries whose people are emotionally attached to Europe are more likely to vote for joining EU, and tend to think EU should go further(Table \@ref(tab:t7)).
+
+```{r t6, echo = FALSE}
+
+# Dataset for non material variables
+# 1. Affiliation to Europe
+'%!in%' <- function(x,y)!('%in%'(x,y))
+
+# 1-1. EU countries
+dataset_nm_affiliation_europe_EU <- dataset |>
+  select(cntry,
+         atcherp, vteurmmb, euftf) |>
+  filter(cntry %!in% c("CH", "IS", "ME", "NO", "RS"))|>
+  filter(atcherp %in% c(0:10),
+         vteurmmb %in% c(1,2),
+         euftf %in% c(0:10)) |>
+  group_by(cntry) |>
+  summarise(`emotionally attached` = mean(atcherp),
+            `vote for remaining` = length(which(vteurmmb==1))/length(which(vteurmmb %in% c(1,2)))*100,
+            `EU further` = mean(euftf))
+
+# [Result]
+correlation_table_affiliation_to_europe <- 
+  dataset_nm_affiliation_europe_EU |>
+  select(-cntry) |>
+  cor(method = "pearson") 
+
+correlation_table_affiliation_to_europe |>
+  knitr::kable(digits = 2,
+               caption = "Correlations among EU Countries",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+# There was a strong correlation between two variables: "vote for remain EU", and "EU should go further",
+# Which can be interpreted as the countries whose people think EU should go further, they tend to have public opinion
+# That they should vote for remaining in EU.
+```
+
+```{r t7, echo = FALSE}
+# 1-2. Non EU countries
+dataset_nm_affiliation_europe_non_EU <- dataset |>
+  select(cntry,
+         atcherp,vteubcmb, euftf) |>
+  filter(cntry %in% c("CH", "IS", "ME", "NO", "RS"))|>
+  group_by(cntry) |>
+  filter(atcherp %in% c(0:10),
+         vteubcmb %in% c(1,2),
+         euftf %in% c(0:10)) |>
+  group_by(cntry)|>
+  summarise("emotionally attached" = length(which(atcherp==1))/length(which(atcherp %in% c(1,2)))*100,
+            "vote for becoming" = length(which(vteubcmb==1))/length(which(vteubcmb %in% c(1,2)))*100,
+            "EU further"  = mean(euftf))
+
+correlation_table_affiliation_to_europe_neu <- 
+  dataset_nm_affiliation_europe_non_EU |>
+  select(-cntry) |>
+  cor(method = "pearson")
+correlation_table_affiliation_to_europe_neu |>
+  knitr::kable(digits = 2,
+               caption = "Correlations among Non EU Countries",
+               booktabs = TRUE,
+               linesep = ""
+               ) |>
+  kable_styling(latex_options = "HOLD_position")
+
+# There is a limitation that the number of the countries is so small(5), but still there was a significant correlation
+# between variables. Most of all, if the countries whose people think EU should go further, they are more likely
+# vote for becoming EU. 
+# Plus, The countries emotionally attached to Europe are more likely to vote for becoming EU.
+# Also they would think the EU should go further.
+```
+
+ Contrary to the previous hypothesis that the affiliation to Europe will be a factor directly linked to Ukraine’s EU accession, there was no significant correlation between the three variables with attitudes of four countries on Ukraine’s accession among France, Germany, Italy and Poland(Table \@ref(tab:t8)). 
+```{r t8, echo = FALSE}
+# [Discussion]
+discussion_dataset_eu <- discussion_dataset |>
+  select(-`Nato accession(%)`)
+dataset_nm_affiliation_europe_EU_discussion <- dataset_nm_affiliation_europe_EU |>
+  filter(cntry %in% c("FR","DE", "IT", "PL"))
+discussion_dataset_merge <- merge(discussion_dataset_eu,
+                                  dataset_nm_affiliation_europe_EU_discussion,
+                                  by = "cntry")
+
+correlation_table_uk_eu <- discussion_dataset_merge |>
+  select(-cntry)|>
+  cor(method = "pearson")
+
+correlation_table_uk_eu[2:4,1] |>
+  knitr::kable(col.names = "Ukraine's EU accession",
+                              booktabs = TRUE,
+               linesep = "",
+               digits = 2,
+               caption = "Correlation between Imigrants Variables and Attitudes on Ukraine's EU Accession") |>
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+### Attitudes on immigrants
+ Another non material factor is related to attitudes on immigrants of three different groups; from the same race or ethnic group as majority, different race or ethnic group from majority, and from poorer countries outside Europe. In general, attitudes towards immigrants are more favorable if the immigrants are more homogeneous with the majority of the country(Table \@ref(tab:t9)).
+
+```{r t9, echo = FALSE}
+# 2. Attitudes on immigrants
+dataset_nm_attitudes_immigrants <- dataset |>
+  select(cntry,
+         imsmetn, imdfetn, impcntr, imbgeco, imueclt, imwbcnt) |>
+  filter(imsmetn %in% c(1:4), imdfetn %in% c(1:4), impcntr %in% c(1:4),
+         imbgeco %in% c(0:10), imueclt %in% c(0:10), imwbcnt %in% c(0:10)) |>
+  group_by(cntry) |>
+  summarise(`Same group` = 10-mean(imsmetn),
+           `Different group` = 10-mean(imdfetn),
+            `Poorer outside Europe` = 10-mean(impcntr),
+            im_for_economy = mean(imbgeco),
+            im_for_culture = mean(imueclt),
+            im_for_country = mean(imwbcnt))
+
+# [Result]
+dataset_nm_attitudes_immigrants|>
+  select(`Same group`,
+         `Different group`,
+         `Poorer outside Europe`)|>
+  summarise(`Same group` = mean(`Same group`),
+            `Different group` = mean(`Different group`),
+            `Poorer outside Europe` = mean(`Poorer outside Europe`)) |>
+  knitr::kable(digits = 2,
+               caption = "Scores of Attitudes on Immigrants: 29 European Countries",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+ Three variables also showed significant correlation with attitudes on Ukraine’s EU accession in four countries(Table \@ref(tab:t10)). Especially, if a country is less favorable to immigrants of a different race or ethnic group from the majority, it is more likely to have negative attitudes on Ukraine’s EU accession. The other way, It is possible to interpret that the more a country is open to another within Europe, there is a higher possibility for these four countries to accept Ukraine to be a part of EU.
+
+```{r t10, echo = FALSE}
+# [Discussion]
+dataset_nm_attitudes_immigrants_filtered <- dataset_nm_attitudes_immigrants |>
+  select(cntry, `Same group`, `Different group`, `Poorer outside Europe`) |>
+  filter(cntry %in% c("FR", "DE", "PL", "IT"))
+
+dataset_nm_attitudes_immigrants_merged <- merge(dataset_nm_attitudes_immigrants_filtered, discussion_dataset,
+                                                by = "cntry") |>
+  select(-`Nato accession(%)`, -cntry)
+
+correlation_table_attitudes_immigrants <- dataset_nm_attitudes_immigrants_merged |>
+  cor(method = "pearson")
+
+correlation_table_attitudes_immigrants[1:3,4] |>
+  knitr::kable(digits = 2,
+               col.names = c("Attitudes on Ukraine's EU accession"),
+               caption = "Correlation between Attitudes on Ukraine's EU accession and Attitudes on Immigrants",               
+               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+### Social Trust
+ By and large, the countries which have high people trust scores also showed high scores in other social trust indicators: understanding others, and loyal to friends. In particular, Denmark, Iceland, Switzerland, and Ireland were consistently sorted out as top 10 countries with high social trust scores.(Figure\@ref(fig:f1)) Among France, Germany, Italy and Poland, all of the scores were highest in Germany.(Figure\@ref(fig:f2))
+ 
+```{r f1, echo = FALSE, fig.cap = "Social Trust Scores by Country", out.width = "80%"}
+# 3. Social trust
+dataset_nm_social_trust <- dataset|>
+  select(cntry, 
+         ppltrst, ipudrst, iplylfr) |>
+  filter(ppltrst %in% c(0:10),
+         ipudrst %in% c(1:6), iplylfr %in% c(1:6)) |>
+  group_by(cntry) |>
+  summarise(people_trust = mean(ppltrst),
+            understand_others = 6-mean(ipudrst),
+            loyal_to_friends = 6-mean(iplylfr))
+
+# [Results] Tables for social trust
+# dataset_nm_social_trust |>
+#  arrange(desc(people_trust))
+# dataset_nm_social_trust |>
+#  arrange(understand_others)
+#dataset_nm_social_trust |>
+#  arrange(loyal_to_friends)
+# By and large, the top countries which have high people trust scores also showed the high scores
+# in understanding others, and loyal to friends.
+# Especially, Denmark, Finland, Iceland, Switzerland, Ireland were consistently sorted out as top 10
+# for the three variables.
+
+dataset_nm_social_trust |>
+  arrange(desc(people_trust))|>
+  mutate(color = case_when(
+    `cntry` %in% c("DK", "FI", "IS", "CH", "IE") ~ "Yes",
+    TRUE ~ "No"
+  )) |>
+  mutate(color = as.factor(color))|>
+  ggplot(aes(reorder(cntry, -people_trust, sum), y = people_trust, fill = color)) +
+  geom_col() +
+  scale_fill_discrete(name = "Top 10 countries \nin understanding others, \nloyal to friends",
+                      breaks = c("Yes", "No"),
+                      labels = c("Yes", "No")) +
+  labs(x = "Country", y = "People trust") 
+```
+
+```{r f2, echo = FALSE, fig.cap = "Social Trust Scores: France, Germany, Italy and Poland", out.width = "80%"}
+# [Discussions]
+dataset_nm_social_trust_cleaned <- 
+  dataset_nm_social_trust |>
+  filter(cntry %in% c("FR", "DE", "IT", "PL")) |>
+  pivot_longer(cols = c("people_trust","understand_others", "loyal_to_friends"),
+               names_to = "social_trust_category",
+               values_to = "values") |>
+  mutate(social_trust_category = as.factor(social_trust_category),
+         cntry = reorder_within(cntry, values, social_trust_category))
+
+dataset_nm_social_trust_cleaned |>
+  ggplot(aes(reorder(cntry, -values), values, fill = social_trust_category)) +
+  scale_x_reordered()+
+  facet_wrap(~social_trust_category, scale = "free_x") +
+  geom_col(show.legend = FALSE) +
+  labs(x = "Country", y = "Score")
+# People Trust: highest=> Germany. Loyal to friends, understanding others
+# => for Germany also took the first place. How would it be related to
+# the public opinion on Ukraine's EU accession?
+```
+
+ We first assumed there would be a strong positive correlation between the social trust score and the attitudes on Ukraine’s EU accession. However, as it is shown on the Table \@ref(tab:t11), the three variables showed negative correlation. Further study is required to explain this discrepancy, but it seems obvious that the social trust among existing social members within a country is different with that towards a new social member from outer group.
+
+```{r t11, echo = FALSE}
+
+dataset_nm_social_trust_merge <- merge(dataset_nm_social_trust, discussion_dataset,
+                                       by = "cntry") |>
+  select(-cntry, -`Nato accession(%)`)
+
+correlation_table_social_trust <- dataset_nm_social_trust_merge |>
+  cor(method = "pearson")
+
+correlation_table_social_trust[1:3,4] |>
+  knitr::kable(digits = 2,
+               caption = "Correlation between Attitudes on Ukraine's EU accession and Social Trust Indicators",
+               col.names = c("Attitudes on Ukraine's EU accession"),
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+### Discrimination
+ The countries with the highest ratio of respondents who defined themselves as a member of a group discriminated against in this country were Iceland, followed by the United Kingdom, Montenegro, France, and Latvia(Table \@ref(tab:t12)). To be specific, Iceland had remarkable high discrimination sclae in age, disability, and gender, and Montenegro in ethnic group, nationality and religion. France in race, and the United Kingdom in sexuality(Figure \@ref(fig:f3)). 
+```{r t12, echo = FALSE}
+# 4. Discrimination
+dataset_nm_discrimination <- dataset |>
+  select(cntry,
+         dscrgrp) |>
+  filter(dscrgrp %in% c(1,2)) |>
+  group_by(cntry) |>
+  summarise(`discrimination_rate(%)` = length(which(dscrgrp==1))/length(which(dscrgrp %in% c(1,2)))*100) |>
+  arrange(desc(`discrimination_rate(%)`))
+
+# [Result 1]
+dataset_nm_discrimination |>
+  slice(c(1:5)) |>
+  knitr::kable(digits = 2, col.names = c("Country", "Discrimination scale(%)"),
+               caption = "Countries with High Discrimination Scale",               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r f3, echo = FALSE, fig.cap = "Discrimination Scale by Category", out.width = "80%"}
+# 4-1. Discrimination type
+dataset_nm_discrimination_type <- dataset |>
+  select(cntry,
+         dscrgrp,
+         dscrrce, dscrntn, dscrrlg, dscrlng, dscretn, dscrage, dscrgnd,
+         dscrsex, dscrdsb) |>
+  filter(dscrgrp ==1) |>
+  group_by(cntry) |>
+  summarise("race" = length(which(dscrrce == 1))/length(dscrgrp)*100,
+            "nationality" = length(which(dscrntn == 1))/length(dscrgrp)*100,
+            "religion" = length(which(dscrrlg == 1))/length(dscrgrp)*100,
+            "language" = length(which(dscrlng == 1))/length(dscrgrp)*100,
+            "ethnic_group" = length(which(dscretn == 1))/length(dscrgrp)*100,
+            "age"= length(which(dscrage == 1))/length(dscrgrp)*100,
+            "gender"= length(which(dscrgnd == 1))/length(dscrgrp)*100, 
+            "sexuality"= length(which(dscrsex == 1))/length(dscrgrp)*100,
+            "disability"= length(which(dscrdsb == 1))/length(dscrgrp)*100 
+            ) |>
+  pivot_longer(cols = c(`race`, `nationality`, `religion`, `language`,
+                        `ethnic_group`,`age`, `gender`, `sexuality`,
+                        `disability`),
+               names_to = "type_of_discrimination",
+               values_to = "rate(%)")
+
+
+# [Result 2]
+dataset_nm_discrimination_type |>
+  filter(cntry %in% c("IS", "GB", "ME", "FR", "LV")) |>
+  ggplot(aes(x = reorder_within(cntry, -`rate(%)`, type_of_discrimination), 
+             y = `rate(%)`, fill = type_of_discrimination)) +
+  geom_col(show.legend = FALSE) +
+  scale_x_reordered() +
+  facet_wrap(~type_of_discrimination, scale = "free") +
+  labs(x = "Country", y = "Discrimination scale(%)")
+```
+
+ As Figure \@ref(fig:f4) shows, Poland showed the highest ratio of the discrimination scale in age, and disability sectors among four countries. On the other hand, it showed almost the lowest scores in ethnic group, language, nationality, race, and religion. However, it does not mean that the Polish people are more open to diversity, since the demographic of Poland is very homogeneous in terms of nationality or ethnicity. Indeed it is estimated that no more than 3% of the total population are national minorities according to Eurydice[@10]. France showed the highest ratio in gender, sexuality, and race sectors, Italy in ethnic group, nationality, and religion. Germany only took the first place in the language sector, reaching way higher than the median of 29 European countries.
+
+```{r f4, echo = FALSE, fig.cap = "Discrimination Scale by Category: France, Germany, Italy and Poland", out.width = "80%"}
+# [Discussion 1]
+median_value <- median(dataset_nm_discrimination $`discrimination_rate(%)`)
+#dataset_nm_discrimination |>
+#  filter(cntry %in% c("FR", "PL", "DE", "IT")) |>
+#  ggplot(aes(x = reorder(cntry, -`discrimination_rate(%)`), y = `discrimination_rate(%)`)) +
+#  geom_col() +
+#  geom_hline(yintercept = median_value) +
+#  geom_text(aes(x = 4, y = median_value + 0.5, label = "Median"),
+#            size = 3) +
+#  labs(x = "Country", y = "Discrimination scale(%)",
+#       title = "Discrimination scale by country")
+
+dataset_nm_discrimination_type |>
+  group_by(type_of_discrimination) |>
+  mutate(type_median = median(`rate(%)`)) |>
+  filter(cntry %in% c("FR", "IT", "DE", "PL")) |>
+  ggplot(aes(x = reorder_within(cntry, -`rate(%)`, type_of_discrimination),
+             y = `rate(%)`, fill = type_of_discrimination)) +
+  geom_col(show.legend = FALSE) +
+  geom_hline(aes(yintercept=type_median))+
+  scale_x_reordered() +
+  facet_wrap(~type_of_discrimination, scale = "free") +
+  labs(x = "Country", y = "Discrimination scale(%)")
+
+```
+
+Among these nine variables, we sorted out ehtnic group, language, and nationality as factors expected to impact on attitudes on Ukraine’s EU accession. According to a 2021 survey conducted by the Kyiv International Institute of Sociology, 82% of Ukrainians declared themselves as a Christians, mostly Orthodox[@11]. Although Orthodox is differentiated with Catholic or Protestants, the major religion in Europe, this paper does not include religion as a social factor that might affect the attitudes on Ukraine’s EU accession because we saw there is enough evidence that they still share commonality on religion.
+
+ In conclusion, there was no significant correlation between the three variables and the attitudes on Ukraine’s EU accession nevertheless ethnic group and language discrimination scale had stronger negative correlation than nationality discrimination scale(Table \@ref(tab:t13)).
+
+
+```{r t13, echo = FALSE}
+# Correlation: Ethnic group
+dataset_nm_discrimination_ethnic <- dataset_nm_discrimination_type |>
+  filter(type_of_discrimination == "ethnic_group",
+         cntry %in% c("FR", "IT", "DE", "PL"))
+
+dataset_nm_discrimination_ehtnic_merged <- merge(dataset_nm_discrimination_ethnic,
+                                                 discussion_dataset, by = "cntry") |>
+  select(-cntry, -type_of_discrimination, -`Nato accession(%)`)
+
+correlation_table_discrimination_ethnic <- dataset_nm_discrimination_ehtnic_merged |>
+  cor(method = "pearson")
+
+#correlation_table_discrimination_ethnic[1,2]
+
+# Correlation: Nationality
+dataset_nm_discrimination_nationality <- dataset_nm_discrimination_type |>
+  filter(type_of_discrimination == "nationality",
+         cntry %in% c("FR", "IT", "DE", "PL"))
+
+dataset_nm_discrimination_nationality_merged <- merge(dataset_nm_discrimination_nationality,
+                                                 discussion_dataset, by = "cntry") |>
+  select(-cntry, -type_of_discrimination, -`Nato accession(%)`)
+
+correlation_table_discrimination_nationality <- dataset_nm_discrimination_nationality_merged |>
+  cor(method = "pearson")
+
+#correlation_table_discrimination_nationality[1,2]
+
+# Correlation: Language
+dataset_nm_discrimination_language <- dataset_nm_discrimination_type |>
+  filter(type_of_discrimination == "language",
+         cntry %in% c("FR", "IT", "DE", "PL"))
+
+dataset_nm_discrimination_language_merged <- merge(dataset_nm_discrimination_language,
+                                                 discussion_dataset, by = "cntry") |>
+  select(-cntry, -type_of_discrimination, -`Nato accession(%)`)
+
+correlation_table_discrimination_language <- dataset_nm_discrimination_language_merged |>
+  cor(method = "pearson")
+
+#correlation_table_discrimination_language[1,2]
+
+# Correlations
+correlations <- tibble("ethnic group" = correlation_table_discrimination_ethnic[1,2],
+"nationliaty" = correlation_table_discrimination_nationality[1,2],
+"language" = correlation_table_discrimination_language[1,2])
+
+correlations |>
+  knitr::kable(digits = 2,
+               caption = "Correlation between Attitudes on Ukraine's EU accession and Discrimination Indicators",               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+
+```
+
+### Interest in Politics
+ Finally, we reviewed how the interest in politics is related to the attitudes on Ukraine’s EU accession. Sweden, Denmark and Germany were the countries with highest interest in politics, opposed to Montenegro, Czech Republic, and Serbia(Table \@ref(tab:t14),Table \@ref(tab:t15)).
+```{r t14, echo = FALSE}
+# 5. Interest in politics
+dataset_nm_political_interest_normalized <- dataset |>
+  select(cntry, 
+         polintr) |>
+  filter(polintr %in% c(1:4)) |>
+  group_by(cntry) |>
+  summarise(interest_in_politics_score = 4- mean(polintr)) |>
+  arrange(desc(interest_in_politics_score))
+
+# [Result]
+dataset_nm_political_interest_normalized |>
+  slice(c(1:3)) |>
+  knitr::kable(col.names = c("Country", "Interest Score"),
+               caption = "Top 3 Countries in Political Interest",
+               digits = 2,               
+               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t15, echo = FALSE}
+dataset_nm_political_interest_normalized |>
+  slice(c(27:29)) |>
+  arrange(interest_in_politics_score) |>
+  knitr::kable(col.names = c("Country", "Interest Score"),
+               caption = "Bottom 3 Countries in Political Interest",
+               digits = 2,booktabs = TRUE,
+               linesep = ""
+               ) |>
+  kable_styling(latex_options = "HOLD_position")
+```
+ Political Interest scores among France, Germany, Italy and Poland are presented in Table \@ref(tab:t16). The covariance between the score and the attitudes on Ukraine’s EU accession showed not remarkable but meaningful negative correlation(-0.67). From the result, it is possible to say that the countries whose people have high interest in politics are more likely to have negative attitudes on Ukraine’s EU accession.
+```{r t16, echo = FALSE}
+# [Discussion]
+dataset_nm_political_interest_normalized |>
+  filter(cntry %in% c("PL", "IT", "FR", "DE")) |>
+  knitr::kable(col.names = c("Country", "Interest Score"),
+               caption = "Political Interest Scores",
+               digits = 2,               
+               booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+
+dataset_nm_political_interest_merged <- merge(dataset_nm_political_interest_normalized,
+                                              discussion_dataset,
+                                              by = "cntry") |>
+  select(-cntry, -`Nato accession(%)`)
+
+correlation_table_political_interest <-
+  cor(dataset_nm_political_interest_merged)
+
+#correlation_table_political_interest[1,2]
+  
+```
+
+
+# Discussions
+ This paper is based on European Social Survey round 9 conducted in 2018, and it provides insights on analyzing different viewpoints of each European country to a particular political issue. It is found that favorable attitudes on immigrants have strong positive correlation with those on Ukraine’s EU accession, while affiliation to Europe and discrimination scale of ethnicity, nationality, and language do not have significant effect. Interest in politics has not remarkable but meaningful negative correlation with them. Finally, the social trust has negative correlation with them, which is opposed to the initial assumption.
+
+ Six indicators used in this paper to review the factors expected to affect the attitudes on Ukraine’s EU accession consist of one material factor and five non material factors.
+ 
+ The material factor is the unemployment indicators, subdivided by three dimensions: short term unemployment, long term unemployment, and recent unemployment. These indicators are derived from the respondents themselves, so it is hard to say the material factor fully represents the economic status of a country. In order to make them credible, more variables should be used to induce the material factor including partner’s unemployment data which gives more specific context of individuals. Also, it is critical to use other complementary material factors such as national unemployment rates or GDP to picture the national scale of economic status.
+ 
+ Non material factors are categorized in five sectors: affiliation to Europe, attitudes on immigrants, social trust, discrimination, and interest in politics. Even though this paper only deals with these five indicators, we found other indicators which should be further analyzed to disclose the factors that can affect the attitudes on Ukraine’s EU accession. For instance, there was a significant negative correlation between the media usage behavior of posting or sharing politics online and the attitudes on Ukraine’s EU accession. Plus, other social variables related to equality, human dignity should be further scrutinized to refine the non material factors. 
+ 
+ Furthermore, further research on the current economic and political relationship between Ukraine and the other four countries to specify the context of this issue. Even though induced covariances illustrate the relationship between each factor with the attitudes on the issue, the correlation is not equal to causation. Hence, it is important to find out convincing evidence from further research to explain the correlation that the variables project. 
+
+# Appendix
+```{r t17, echo = FALSE}
+# [Result 1] Tables for material variables
+mv_ap <- tibble(`Variable` = c("uemp3m", "uemp12m","uemp5yr"),
+                `Description` = c("Ever unemployed and seeking work for a period more than three months",
+                                "Any period of unemployment and work seeking lasted 12 months or more",
+                                "Any period of unemployment and work seeking within last 5 years"))
+
+mv_ap |> knitr::kable(caption = "Material Variable",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t18, echo = FALSE}
+
+nmv_ap_aff<- tibble(`Variable` = c("atcherp", "vteurmmb","vteubcmb", "euftf"),
+                    `Description` = c("How emotionally attached to Europe",
+                                      "Would vote for [country] to remain member of European Union or leave",
+                                      "Would vote for [country] to become member of European Union or remain outside",
+                                      "European Union: European unification go further or gone too far")
+                    )
+nmv_ap_aff |> knitr::kable(caption = "Non Material Variable: Affiliation to Europe",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t20, echo = FALSE}
+nmv_ap_im <- tibble(`Variable` = c("imsmetn", "imdfetn","impcntr"),
+                    `Description` = c("Allow many/few immigrants of same race/ethnic group as",
+                                      "Allow many/few immigrants of different race/ethnic group from majority",
+                                      "Allow many/few immigrants from poorer countries outside Europe"))
+
+nmv_ap_im |>
+   knitr::kable(caption = "Non Material Variable: Attitudes on Immigrants",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t21, echo = FALSE}
+nmv_ap_st <- tibble(`Variable` = c("ppltrst", "ipudrst","iplylfr"),
+                    `Description` =c("Most people can be trusted or you can't be too careful", 
+                                     "Important to understand different people",
+                                    "Important to be loyal to friends and devote to people close" ))
+
+nmv_ap_st |> knitr::kable(caption = "Non Material Variable: Social Trust",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t22, echo = FALSE}
+nmv_ap_dsc <- tibble(`Variable` = c("dscrgrp", "dscrrce", "dscrntn", "dscrrlg", "dscrlng", "dscretn", "dscrage", "dscrgnd", "dscrsex", "dscrdsb"),
+                     `Description` = c("Member of a group discriminated against in this country", 
+                                       "Discrimination of respondent's group: colour or race",
+                                       "Discrimination of respondent's group: nationality", 
+                                       "Discrimination of respondent's group: religion",
+                                       "Discrimination of respondent's group: language",
+                                       "Discrimination of respondent's group: ethnic group",
+                                       "Discrimination of respondent's group: age",
+                                       "Discrimination of respondent's group: gender",
+                                       "Discrimination of respondent's group: sexuality", 
+                                       "Discrimination of respondent's group: disability"))
+
+nmv_ap_dsc |> knitr::kable(caption = "Non Material Variable: Discrimination Scale",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t23, echo = FALSE}
+nmv_ap_it <- tibble(`Variable` = c("polintr"),
+                    `Description` = c("How interested in politics"))
+nmv_ap_it |>
+   knitr::kable(caption = "Non Material Variable: Interest in Politics",
+                              booktabs = TRUE,
+               linesep = "") |>
+  kable_styling(latex_options = "HOLD_position")
+```
+
+```{r t24, echo = FALSE}
+
+```
+# Reference
